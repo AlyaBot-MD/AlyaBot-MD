@@ -1,0 +1,155 @@
+{
+  "appName": "AlyaBot-MD API Portal",
+  "version": "1.0.0",
+  "creator": "Yoel",
+  "description": "Portal de APIs gratuitas para bots y desarrollo",
+  "baseURL": "https://alyabot-md.github.io",
+  "theme": {
+    "primaryColor": "#6366f1",
+    "secondaryColor": "#8b5cf6",
+    "successColor": "#10b981",
+    "dangerColor": "#ef4444",
+    "warningColor": "#f59e0b",
+    "darkBg": "#0f172a",
+    "cardBg": "#1e293b",
+    "textPrimary": "#f1f5f9",
+    "textSecondary": "#cbd5e1"
+  },
+  "categories": [
+    {
+      "id": "ai",
+      "name": "Inteligencia Artificial",
+      "icon": "🤖",
+      "description": "APIs de IA y Machine Learning"
+    },
+    {
+      "id": "clima",
+      "name": "Clima",
+      "icon": "🌤️",
+      "description": "APIs de datos meteorológicos"
+    },
+    {
+      "id": "datos",
+      "name": "Datos",
+      "icon": "📊",
+      "description": "APIs de datos públicos"
+    },
+    {
+      "id": "media",
+      "name": "Media",
+      "icon": "🎨",
+      "description": "APIs de imágenes, videos y contenido"
+    },
+    {
+      "id": "bots",
+      "name": "Bots",
+      "icon": "🎮",
+      "description": "APIs para crear bots"
+    },
+    {
+      "id": "pagos",
+      "name": "Pagos",
+      "icon": "💳",
+      "description": "APIs de procesamiento de pagos"
+    }
+  ],
+  "features": [
+    {
+      "id": "busqueda",
+      "name": "Búsqueda Avanzada",
+      "icon": "🔍",
+      "enabled": true,
+      "description": "Busca APIs por nombre o descripción"
+    },
+    {
+      "id": "filtrado",
+      "name": "Filtrado por Categoría",
+      "icon": "🏷️",
+      "enabled": true,
+      "description": "Filtra APIs por categoría"
+    },
+    {
+      "id": "ejemplos",
+      "name": "Ejemplos de Código",
+      "icon": "💻",
+      "enabled": true,
+      "description": "Código listo para copiar"
+    },
+    {
+      "id": "documentacion",
+      "name": "Documentación",
+      "icon": "📚",
+      "enabled": true,
+      "description": "Enlaces a documentación oficial"
+    },
+    {
+      "id": "descargas",
+      "name": "Descargar JSON",
+      "icon": "💾",
+      "enabled": true,
+      "description": "Exporta datos en JSON"
+    },
+    {
+      "id": "portapapeles",
+      "name": "Copiar al Portapapeles",
+      "icon": "📋",
+      "enabled": true,
+      "description": "Copia endpoints al portapapeles"
+    }
+  ],
+  "socialLinks": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/AlyaBot-MD",
+      "icon": "🐙"
+    },
+    {
+      "name": "Discord",
+      "url": "https://discord.gg/alyabot",
+      "icon": "💬"
+    },
+    {
+      "name": "WhatsApp Channel",
+      "url": "https://whatsapp.com/channel/0029Vb8Mlht2UPBIKGWSFX0R",
+      "icon": "📱"
+    }
+  ],
+  "contacts": {
+    "email": "support@alyabot.com",
+    "github": "https://github.com/AlyaBot-MD",
+    "discord": "https://discord.gg/alyabot",
+    "creator": "Yoel"
+  },
+  "apiSettings": {
+    "maxAPIsPerPage": 12,
+    "enableCaching": true,
+    "cacheDuration": 3600,
+    "enableNotifications": true,
+    "notificationDuration": 3000
+  },
+  "security": {
+    "enableSSL": true,
+    "enableCSP": true,
+    "enableXFO": true,
+    "enableXCTO": true,
+    "trackingEnabled": false
+  },
+  "seo": {
+    "title": "AlyaBot-MD - Portal de APIs Gratuitas",
+    "description": "Accede a 24+ APIs gratuitas para crear bots y aplicaciones. Portal oficial de AlyaBot-MD.",
+    "keywords": ["API", "bots", "desarrollo", "gratuito", "AlyaBot"],
+    "author": "Yoel",
+    "ogImage": "https://alyabot-md.github.io/og-image.png"
+  },
+  "maintenance": {
+    "enabled": false,
+    "message": "El portal está en mantenimiento",
+    "endTime": "2024-08-24T00:00:00Z"
+  },
+  "statistics": {
+    "totalAPIs": 24,
+    "totalCategories": 6,
+    "apiAvailability": "99.9%",
+    "lastUpdate": "2024-08-23T01:40:00Z"
+  }
+}
