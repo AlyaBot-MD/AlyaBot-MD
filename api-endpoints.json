@@ -1,0 +1,557 @@
+{
+  "status": "success",
+  "total": 24,
+  "category": "APIs Gratuitas",
+  "creator": "Yoel",
+  "platform": "AlyaBot-MD",
+  "endpoints": [
+    {
+      "id": 1,
+      "name": "OpenWeather API",
+      "category": "Clima",
+      "path": "/api/weather/current",
+      "method": "GET",
+      "description": "Obtén datos de clima en tiempo real",
+      "baseURL": "https://api.openweathermap.org/data/2.5",
+      "endpoint": "https://api.openweathermap.org/data/2.5/weather",
+      "authentication": "API Key",
+      "rateLimit": "1000 llamadas/día",
+      "parameters": {
+        "q": "nombre de ciudad",
+        "appid": "tu_api_key",
+        "units": "metric"
+      },
+      "response": {
+        "coord": { "lon": 0, "lat": 0 },
+        "main": { "temp": 0, "humidity": 0 }
+      }
+    },
+    {
+      "id": 2,
+      "name": "REST Countries API",
+      "category": "Datos",
+      "path": "/api/countries/all",
+      "method": "GET",
+      "description": "Información de todos los países",
+      "baseURL": "https://restcountries.com/v3.1",
+      "endpoint": "https://restcountries.com/v3.1/all",
+      "authentication": "Ninguna",
+      "rateLimit": "Ilimitado",
+      "parameters": {},
+      "response": {
+        "name": { "common": "Spain" },
+        "capital": ["Madrid"],
+        "region": "Europe"
+      }
+    },
+    {
+      "id": 3,
+      "name": "JSONPlaceholder API",
+      "category": "Datos",
+      "path": "/api/posts",
+      "method": "GET",
+      "description": "Datos de prueba para desarrollo",
+      "baseURL": "https://jsonplaceholder.typicode.com",
+      "endpoint": "https://jsonplaceholder.typicode.com/posts",
+      "authentication": "Ninguna",
+      "rateLimit": "Ilimitado",
+      "parameters": {
+        "userId": "numero del usuario",
+        "_limit": "cantidad"
+      },
+      "response": {
+        "userId": 1,
+        "id": 1,
+        "title": "titulo",
+        "body": "contenido"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Hugging Face API",
+      "category": "IA",
+      "path": "/api/models/inference",
+      "method": "POST",
+      "description": "Accede a modelos de IA",
+      "baseURL": "https://api-inference.huggingface.co",
+      "endpoint": "https://api-inference.huggingface.co/models",
+      "authentication": "API Key Bearer Token",
+      "rateLimit": "Varía",
+      "parameters": {
+        "Authorization": "Bearer YOUR_TOKEN",
+        "inputs": "tu texto o datos"
+      },
+      "response": {
+        "generated_text": "respuesta del modelo"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Random User API",
+      "category": "Datos",
+      "path": "/api/users/random",
+      "method": "GET",
+      "description": "Usuarios aleatorios para pruebas",
+      "baseURL": "https://randomuser.me",
+      "endpoint": "https://randomuser.me/api",
+      "authentication": "Ninguna",
+      "rateLimit": "Ilimitado",
+      "parameters": {
+        "results": "cantidad de usuarios",
+        "gender": "male/female"
+      },
+      "response": {
+        "results": [
+          {
+            "gender": "male",
+            "name": { "first": "John", "last": "Doe" },
+            "email": "john@example.com"
+          }
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "name": "OpenAI API",
+      "category": "IA",
+      "path": "/v1/chat/completions",
+      "method": "POST",
+      "description": "ChatGPT y modelos avanzados",
+      "baseURL": "https://api.openai.com",
+      "endpoint": "https://api.openai.com/v1/chat/completions",
+      "authentication": "API Key Bearer Token",
+      "rateLimit": "$5 crédito inicial",
+      "parameters": {
+        "Authorization": "Bearer sk-...",
+        "model": "gpt-3.5-turbo",
+        "messages": []
+      },
+      "response": {
+        "choices": [
+          {
+            "message": { "role": "assistant", "content": "respuesta" }
+          }
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "name": "Pexels API",
+      "category": "Media",
+      "path": "/v1/search",
+      "method": "GET",
+      "description": "Fotos gratuitas de alta calidad",
+      "baseURL": "https://api.pexels.com",
+      "endpoint": "https://api.pexels.com/v1/search",
+      "authentication": "API Key",
+      "rateLimit": "10000 llamadas/hora",
+      "parameters": {
+        "query": "termino de busqueda",
+        "per_page": "cantidad",
+        "Authorization": "YOUR_API_KEY"
+      },
+      "response": {
+        "photos": [
+          {
+            "id": 1,
+            "src": {
+              "original": "url",
+              "medium": "url"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "name": "CoinGecko API",
+      "category": "Datos",
+      "path": "/api/v3/simple/price",
+      "method": "GET",
+      "description": "Precios de criptomonedas",
+      "baseURL": "https://api.coingecko.com",
+      "endpoint": "https://api.coingecko.com/api/v3/simple/price",
+      "authentication": "Ninguna",
+      "rateLimit": "10-50 llamadas/minuto",
+      "parameters": {
+        "ids": "bitcoin,ethereum",
+        "vs_currencies": "usd,eur"
+      },
+      "response": {
+        "bitcoin": { "usd": 0, "eur": 0 }
+      }
+    },
+    {
+      "id": 9,
+      "name": "Spotify API",
+      "category": "Media",
+      "path": "/v1/search",
+      "method": "GET",
+      "description": "Datos de música y artistas",
+      "baseURL": "https://api.spotify.com",
+      "endpoint": "https://api.spotify.com/v1/search",
+      "authentication": "OAuth Bearer Token",
+      "rateLimit": "Varía",
+      "parameters": {
+        "q": "artista o canción",
+        "type": "track,artist",
+        "Authorization": "Bearer TOKEN"
+      },
+      "response": {
+        "tracks": {
+          "items": [
+            {
+              "name": "cancion",
+              "artists": [{ "name": "artista" }]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 10,
+      "name": "NewsAPI",
+      "category": "Datos",
+      "path": "/v2/everything",
+      "method": "GET",
+      "description": "Noticias de múltiples fuentes",
+      "baseURL": "https://newsapi.org",
+      "endpoint": "https://newsapi.org/v2/everything",
+      "authentication": "API Key",
+      "rateLimit": "100 llamadas/día",
+      "parameters": {
+        "q": "termino de busqueda",
+        "apiKey": "YOUR_API_KEY",
+        "sortBy": "publishedAt"
+      },
+      "response": {
+        "articles": [
+          {
+            "title": "titular",
+            "description": "descripcion",
+            "url": "enlace"
+          }
+        ]
+      }
+    },
+    {
+      "id": 11,
+      "name": "GitHub API",
+      "category": "Datos",
+      "path": "/users/{username}",
+      "method": "GET",
+      "description": "Datos de repositorios y usuarios",
+      "baseURL": "https://api.github.com",
+      "endpoint": "https://api.github.com/users",
+      "authentication": "Opcional - PAT Token",
+      "rateLimit": "60 llamadas/hora (anónimo)",
+      "parameters": {
+        "username": "nombre de usuario"
+      },
+      "response": {
+        "login": "username",
+        "public_repos": 0,
+        "followers": 0
+      }
+    },
+    {
+      "id": 12,
+      "name": "Telegram Bot API",
+      "category": "Bots",
+      "path": "/bot{TOKEN}/sendMessage",
+      "method": "POST",
+      "description": "Crear bots de Telegram",
+      "baseURL": "https://api.telegram.org",
+      "endpoint": "https://api.telegram.org/bot{TOKEN}/sendMessage",
+      "authentication": "Bot Token",
+      "rateLimit": "Sin límite",
+      "parameters": {
+        "chat_id": "id del chat",
+        "text": "mensaje"
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "message_id": 0,
+          "text": "mensaje"
+        }
+      }
+    },
+    {
+      "id": 13,
+      "name": "Discord Bot API",
+      "category": "Bots",
+      "path": "/api/v10/channels/{channel_id}/messages",
+      "method": "POST",
+      "description": "Bots para Discord",
+      "baseURL": "https://discord.com/api",
+      "endpoint": "https://discord.com/api/v10/channels",
+      "authentication": "Bot Token",
+      "rateLimit": "Sin límite",
+      "parameters": {
+        "Authorization": "Bot TOKEN",
+        "content": "mensaje"
+      },
+      "response": {
+        "id": "message_id",
+        "content": "mensaje",
+        "author": { "id": "user_id" }
+      }
+    },
+    {
+      "id": 14,
+      "name": "WhatsApp Cloud API",
+      "category": "Bots",
+      "path": "/v18.0/{phone_number_id}/messages",
+      "method": "POST",
+      "description": "Integración de WhatsApp",
+      "baseURL": "https://graph.instagram.com",
+      "endpoint": "https://graph.instagram.com/v18.0/messages",
+      "authentication": "Access Token",
+      "rateLimit": "1000 mensajes/día",
+      "parameters": {
+        "Authorization": "Bearer ACCESS_TOKEN",
+        "messaging_product": "whatsapp"
+      },
+      "response": {
+        "messages": [{ "id": "message_id" }],
+        "contacts": [{ "input": "numero", "wa_id": "id" }]
+      }
+    },
+    {
+      "id": 15,
+      "name": "Twilio API",
+      "category": "Bots",
+      "path": "/2010-04-01/Accounts/{AccountSid}/Messages",
+      "method": "POST",
+      "description": "SMS, llamadas y video",
+      "baseURL": "https://api.twilio.com",
+      "endpoint": "https://api.twilio.com/2010-04-01/Accounts",
+      "authentication": "Basic Auth (AccountSid:AuthToken)",
+      "rateLimit": "Varía",
+      "parameters": {
+        "From": "numero_origen",
+        "To": "numero_destino",
+        "Body": "mensaje"
+      },
+      "response": {
+        "sid": "message_sid",
+        "status": "queued"
+      }
+    },
+    {
+      "id": 16,
+      "name": "OMDB API",
+      "category": "Media",
+      "path": "/",
+      "method": "GET",
+      "description": "Películas y series de TV",
+      "baseURL": "https://www.omdbapi.com",
+      "endpoint": "https://www.omdbapi.com",
+      "authentication": "API Key",
+      "rateLimit": "1000 llamadas/día",
+      "parameters": {
+        "t": "titulo de pelicula",
+        "apikey": "YOUR_API_KEY",
+        "type": "movie,series"
+      },
+      "response": {
+        "Title": "Inception",
+        "Year": "2010",
+        "imdbRating": "8.8"
+      }
+    },
+    {
+      "id": 17,
+      "name": "Unsplash API",
+      "category": "Media",
+      "path": "/search/photos",
+      "method": "GET",
+      "description": "Fotos de stock gratuitas",
+      "baseURL": "https://api.unsplash.com",
+      "endpoint": "https://api.unsplash.com/search/photos",
+      "authentication": "API Key",
+      "rateLimit": "50 llamadas/hora",
+      "parameters": {
+        "query": "termino",
+        "client_id": "YOUR_API_KEY",
+        "per_page": "cantidad"
+      },
+      "response": {
+        "results": [
+          {
+            "id": "photo_id",
+            "urls": { "small": "url", "full": "url" }
+          }
+        ]
+      }
+    },
+    {
+      "id": 18,
+      "name": "Giphy API",
+      "category": "Media",
+      "path": "/v1/gifs/search",
+      "method": "GET",
+      "description": "GIFs animados",
+      "baseURL": "https://api.giphy.com",
+      "endpoint": "https://api.giphy.com/v1/gifs/search",
+      "authentication": "API Key",
+      "rateLimit": "5000 llamadas/hora",
+      "parameters": {
+        "q": "termino",
+        "api_key": "YOUR_API_KEY",
+        "limit": "cantidad"
+      },
+      "response": {
+        "data": [
+          {
+            "id": "gif_id",
+            "url": "giphy_url"
+          }
+        ]
+      }
+    },
+    {
+      "id": 19,
+      "name": "Google Fonts API",
+      "category": "Media",
+      "path": "/webfonts/v1/webfonts",
+      "method": "GET",
+      "description": "Fuentes tipográficas",
+      "baseURL": "https://www.googleapis.com",
+      "endpoint": "https://www.googleapis.com/webfonts/v1/webfonts",
+      "authentication": "API Key",
+      "rateLimit": "Ilimitado",
+      "parameters": {
+        "key": "YOUR_API_KEY",
+        "sort": "alphabetical"
+      },
+      "response": {
+        "items": [
+          {
+            "family": "Roboto",
+            "variants": ["regular", "bold"]
+          }
+        ]
+      }
+    },
+    {
+      "id": 20,
+      "name": "Exchange Rate API",
+      "category": "Datos",
+      "path": "/v4/latest/{currency}",
+      "method": "GET",
+      "description": "Tasas de cambio de divisas",
+      "baseURL": "https://api.exchangerate-api.com",
+      "endpoint": "https://api.exchangerate-api.com/v4/latest",
+      "authentication": "API Key",
+      "rateLimit": "1500 llamadas/mes",
+      "parameters": {
+        "base": "divisa base"
+      },
+      "response": {
+        "rates": {
+          "EUR": 0.85,
+          "GBP": 0.73
+        }
+      }
+    },
+    {
+      "id": 21,
+      "name": "Clarifai AI",
+      "category": "IA",
+      "path": "/v2/models/{model_id}/outputs",
+      "method": "POST",
+      "description": "Visión por computadora",
+      "baseURL": "https://api.clarifai.com",
+      "endpoint": "https://api.clarifai.com/v2/models",
+      "authentication": "API Key",
+      "rateLimit": "Créditos",
+      "parameters": {
+        "Authorization": "Key YOUR_API_KEY"
+      },
+      "response": {
+        "outputs": [
+          {
+            "data": {
+              "concepts": []
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": 22,
+      "name": "Replicate AI",
+      "category": "IA",
+      "path": "/v1/predictions",
+      "method": "POST",
+      "description": "Modelos de IA sin GPU",
+      "baseURL": "https://api.replicate.com",
+      "endpoint": "https://api.replicate.com/v1/predictions",
+      "authentication": "Bearer Token",
+      "rateLimit": "Créditos",
+      "parameters": {
+        "Authorization": "Bearer YOUR_TOKEN",
+        "version": "model_version",
+        "input": {}
+      },
+      "response": {
+        "id": "prediction_id",
+        "status": "processing",
+        "output": null
+      }
+    },
+    {
+      "id": 23,
+      "name": "Stripe API",
+      "category": "Pagos",
+      "path": "/v1/payment_intents",
+      "method": "POST",
+      "description": "Procesamiento de pagos",
+      "baseURL": "https://api.stripe.com",
+      "endpoint": "https://api.stripe.com/v1/payment_intents",
+      "authentication": "API Key",
+      "rateLimit": "Ilimitado (test)",
+      "parameters": {
+        "Authorization": "Bearer sk_test_...",
+        "amount": "cantidad en centavos",
+        "currency": "usd"
+      },
+      "response": {
+        "id": "pi_...",
+        "status": "succeeded",
+        "amount": 0
+      }
+    },
+    {
+      "id": 24,
+      "name": "Lorem Picsum",
+      "category": "Media",
+      "path": "/{width}/{height}",
+      "method": "GET",
+      "description": "Imágenes placeholder",
+      "baseURL": "https://picsum.photos",
+      "endpoint": "https://picsum.photos",
+      "authentication": "Ninguna",
+      "rateLimit": "Ilimitado",
+      "parameters": {
+        "width": "ancho",
+        "height": "alto",
+        "random": "true"
+      },
+      "response": {
+        "type": "image/jpeg",
+        "url": "imagen"
+      }
+    }
+  ],
+  "metadata": {
+    "version": "1.0.0",
+    "lastUpdate": "2024-08-23",
+    "creator": "Yoel",
+    "project": "AlyaBot-MD",
+    "documentation": "https://github.com/AlyaBot-MD/AlyaBot-MD",
+    "license": "MIT"
+  }
+}
