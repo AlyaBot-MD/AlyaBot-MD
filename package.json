@@ -1,0 +1,19 @@
+{
+  "name": "alyabot-md",
+  "version": "1.0.0",
+  "description": "AlyaBot-MD - WhatsApp Multi Device Bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "keywords": [
+    "whatsapp",
+    "bot",
+    "baileys",
+    "alya",
+    "alyabot"
+  ],
+  "author": "AlyaBot-MD",
+  "license": "MIT"
+}
