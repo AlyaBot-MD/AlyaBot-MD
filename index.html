@@ -8,12 +8,20 @@
 </head>
 <body>
     <div class="container">
-        <!-- Header -->
+        <!-- Header con Usuario y Logout -->
         <header class="header">
             <div class="header-content">
-                <h1>🤖 AlyaBot-MD</h1>
-                <p class="subtitle">Portal de APIs Key Gratuitas</p>
-                <p class="creator">Creador: Yoel</p>
+                <div class="header-top">
+                    <div>
+                        <h1>🤖 AlyaBot-MD</h1>
+                        <p class="subtitle">Portal de APIs Key Gratuitas</p>
+                        <p class="creator">Creador: Yoel</p>
+                    </div>
+                    <div class="user-info">
+                        <p id="userEmail" class="user-email"></p>
+                        <button class="logout-btn" onclick="logout()">🚪 Salir</button>
+                    </div>
+                </div>
             </div>
         </header>
 
@@ -32,7 +40,8 @@
                 <button class="filter-btn" onclick="filterByCategory('clima')">Clima</button>
                 <button class="filter-btn" onclick="filterByCategory('datos')">Datos</button>
                 <button class="filter-btn" onclick="filterByCategory('media')">Media</button>
-                <button class="filter-btn" onclick="filterByCategory('otro')">Otros</button>
+                <button class="filter-btn" onclick="filterByCategory('bots')">Bots</button>
+                <button class="filter-btn" onclick="filterByCategory('pagos')">Pagos</button>
             </div>
         </section>
 
@@ -62,6 +71,35 @@
             </div>
         </div>
     </div>
+
+    <script>
+        // Verificar si el usuario está autenticado
+        function checkAuthentication() {
+            const isLoggedIn = localStorage.getItem('isLoggedIn');
+            const userEmail = localStorage.getItem('userEmail');
+
+            if (!isLoggedIn || !userEmail) {
+                // Redirigir al login
+                window.location.href = 'login.html';
+            } else {
+                // Mostrar email del usuario
+                document.getElementById('userEmail').textContent = '👤 ' + userEmail;
+            }
+        }
+
+        // Función para cerrar sesión
+        function logout() {
+            if (confirm('¿Estás seguro que deseas salir?')) {
+                localStorage.removeItem('isLoggedIn');
+                localStorage.removeItem('userEmail');
+                localStorage.removeItem('loginTime');
+                window.location.href = 'login.html';
+            }
+        }
+
+        // Verificar autenticación al cargar la página
+        checkAuthentication();
+    </script>
 
     <script src="script.js"></script>
 </body>
