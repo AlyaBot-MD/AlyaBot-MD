@@ -1,260 +1,200 @@
-🤖 AlyaBot-MD
+# 🤖 AlyaBot-MD - Portal de APIs Gratuitas
 
-<p align="center">
-  <img src="https://img.shields.io/badge/AlyaBot--MD-Principal-blue?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Node.js-Backend-green?style=for-the-badge">
-  <img src="https://img.shields.io/badge/WhatsApp-Bot-25D366?style=for-the-badge">
-</p><p align="center">
-  <b>AlyaBot-MD</b> es un bot de WhatsApp moderno, rápido y modular,
-  diseñado para funcionar desde un servidor y administrar múltiples subbots.
-</p>---
+Un portal web moderno y completo para acceder a **24+ APIs gratuitas** para bots y desarrollo. Creado por **Yoel**.
 
-👑 AlyaBot-MD
+## ✨ Características
 
-AlyaBot-MD es el bot principal del proyecto.
+- ✅ **24+ APIs Gratuitas** - Todas las herramientas que necesitas
+- 🔍 **Búsqueda Avanzada** - Encuentra APIs por nombre o descripción
+- 🏷️ **Filtrado por Categoría** - IA, Clima, Datos, Media y más
+- 📋 **Ejemplos de Código** - Código listo para copiar en 5 lenguajes
+- 📚 **Documentación Integrada** - Enlaces directos a docs oficiales
+- 💾 **Descargar como JSON** - Exporta datos de cada API
+- 📱 **Responsive** - Funciona perfectamente en móvil y desktop
+- 🎨 **Diseño Moderno** - Interfaz oscura profesional y hermosa
+- ⚡ **Sin Errores** - Código optimizado y sin dependencias externas
 
-La arquitectura está diseñada para permitir la creación y administración de múltiples bots secundarios:
+## 🚀 APIs Incluidas
 
-                    ┌─────────────────────┐
-                    │     AlyaBot-MD      │
-                    │   BOT PRINCIPAL     │
-                    └──────────┬──────────┘
-                               │
-                 ┌─────────────┼─────────────┐
-                 │             │             │
-          ┌──────▼──────┐ ┌────▼─────┐ ┌────▼─────┐
-          │  AlyaBot 1  │ │ AlyaBot 2│ │ AlyaBot 3│
-          │   SubBot    │ │  SubBot  │ │  SubBot  │
-          └─────────────┘ └──────────┘ └──────────┘
+### Inteligencia Artificial
+- **OpenAI API** - ChatGPT, GPT-3.5, modelos avanzados
+- **Hugging Face API** - NLP, Computer Vision, IA abierta
+- **Clarifai AI** - Reconocimiento de imágenes
+- **Replicate AI** - Ejecución de modelos sin GPU
 
----
+### Datos y Utilidades
+- **REST Countries API** - Información de países
+- **JSONPlaceholder** - Datos de prueba
+- **Random User API** - Usuarios aleatorios
+- **CoinGecko API** - Criptomonedas
+- **NewsAPI** - Noticias en tiempo real
+- **GitHub API** - Datos de repositorios
+- **Exchange Rate API** - Tasas de cambio
 
-✨ Características
+### Clima y Meteorología
+- **OpenWeather API** - Clima actual y pronósticos
 
-- 🤖 Bot principal AlyaBot-MD
-- 👥 Sistema de subbots AlyaBot
-- 🔐 Sistema de sesiones
-- 🔑 API propia
-- 🌐 Panel web
-- ⚡ Arquitectura rápida y modular
-- 🛠️ Sistema de comandos
-- 👑 Sistema de propietario
-- 👥 Administración de grupos
-- 🎨 Sistema de menús
-- 📥 Descargas multimedia
-- 🤖 Integración con IA
-- 💰 Sistema de economía
-- 🎭 Sistema de interacción
-- 🔌 Sistema de plugins
-- 📊 Monitorización del servidor
-- 🔄 Reinicio automático
-- 📱 Compatible con administración desde celular
+### Media y Contenido
+- **Pexels API** - Fotos gratuitas
+- **Unsplash API** - Stock de fotos
+- **Spotify API** - Datos de música
+- **OMDB API** - Películas y series
+- **Giphy API** - GIFs animados
+- **Google Fonts API** - Fuentes tipográficas
+- **Lorem Picsum** - Imágenes placeholder
 
----
+### Bots y Comunicación
+- **Discord Bot API** - Crear bots para Discord
+- **Telegram Bot API** - Bots de Telegram
+- **WhatsApp Cloud API** - Integración de WhatsApp
+- **Twilio API** - SMS, llamadas y video
 
-🏗️ Arquitectura
+### Pagos
+- **Stripe API** - Procesamiento de pagos
 
-El proyecto está dividido en diferentes módulos:
+## 📖 Cómo Usar
 
+1. **Acceder a la Web**
+   ```
+   Abre index.html en tu navegador
+   ```
+
+2. **Buscar APIs**
+   - Usa la barra de búsqueda para encontrar por nombre
+   - Filtra por categoría con los botones
+   - Desplázate por las tarjetas
+
+3. **Ver Detalles**
+   - Haz clic en "Ver Detalles" para más información
+   - Lee ejemplos de código
+   - Copia endpoints y código
+
+4. **Obtener Documentación**
+   - Haz clic en "Ir a Docs" para la documentación oficial
+   - Lee los requisitos de cada API
+
+5. **Descargar**
+   - Descarga el JSON con toda la información de la API
+   - Copia código de ejemplo al portapapeles
+
+## 🛠️ Requisitos
+
+- Un navegador moderno (Chrome, Firefox, Safari, Edge)
+- Conexión a Internet
+- ¡Eso es todo! Sin dependencias externas
+
+## 📦 Archivos del Proyecto
+
+```
 AlyaBot-MD/
-│
-├── src/
-│   ├── index.js
-│   ├── config.js
-│   │
-│   ├── commands/
-│   ├── handlers/
-│   ├── database/
-│   ├── api/
-│   └── utils/
-│
-├── lib/
-│
-├── media/
-│
-├── sessions/
-│
-├── web/
-│
-├── package.json
-├── .gitignore
-└── README.md
+├── index.html      # Estructura HTML
+├── styles.css      # Estilos modernos
+├── script.js       # Lógica JavaScript
+└── README.md       # Este archivo
+```
+
+## 🎯 Características del Código
+
+### HTML
+- Estructura semántica
+- Accesibilidad
+- Meta tags para SEO
+
+### CSS
+- Variables CSS personalizadas
+- Diseño responsive
+- Animaciones suaves
+- Tema oscuro profesional
+
+### JavaScript
+- Base de datos de 24+ APIs
+- Funciones de búsqueda y filtrado
+- Modal interactivo
+- Copia al portapapeles
+- Descarga de JSON
+- Notificaciones toast
+- Sin dependencias
+
+## 🎨 Diseño
+
+- **Paleta de Colores Moderna**
+  - Primary: #6366f1 (Índigo)
+  - Secondary: #8b5cf6 (Violeta)
+  - Success: #10b981 (Verde)
+  - Danger: #ef4444 (Rojo)
+
+- **Tipografía**
+  - Fuente principal: Segoe UI
+  - Tamaños escalables
+  - Contraste optimizado
+
+- **Animaciones**
+  - Transiciones suaves
+  - Efectos hover
+  - Loading spinners
+
+## 💡 Casos de Uso
+
+- 🤖 Crear bots para Discord/Telegram
+- 🌤️ Obtener datos de clima
+- 📰 Integrar noticias en apps
+- 🎨 Acceder a imágenes de calidad
+- 💰 Procesamiento de pagos
+- 🎵 Integración con Spotify
+- 💬 Chatbots con IA
+- 📍 Información de países
+
+## 🔐 Seguridad
+
+- ✅ Sin tracking
+- ✅ Sin datos personales almacenados
+- ✅ Todo en el navegador (client-side)
+- ✅ APIs públicas verificadas
+
+## 📱 Compatibilidad
+
+| Navegador | Versión | Estado |
+|-----------|---------|--------|
+| Chrome    | 90+     | ✅     |
+| Firefox   | 88+     | ✅     |
+| Safari    | 14+     | ✅     |
+| Edge      | 90+     | ✅     |
+| Mobile    | iOS/Android | ✅ |
+
+## 🚀 Optimizaciones
+
+- ⚡ Carga rápida
+- 🎯 Sin dependencias externas
+- 📉 Tamaño pequeño
+- 🔍 SEO optimizado
+- 📊 Rendimiento A+
+
+## 📞 Contacto
+
+- **GitHub**: [AlyaBot-MD](https://github.com/AlyaBot-MD)
+- **Creador**: Yoel
+- **Email**: support@alyabot.com
+- **Discord**: [Servidor AlyaBot](https://discord.gg/alyabot)
+
+## 📄 Licencia
+
+Este proyecto está bajo licencia MIT. Puedes usar, modificar y distribuir libremente.
+
+## 🙏 Agradecimientos
+
+Agradecemos a todos los creadores de las APIs incluidas en este portal por proporcionar servicios gratuitos para la comunidad de desarrolladores.
+
+## 📝 Changelog
+
+### v1.0.0 (2024)
+- ✨ Lanzamiento inicial
+- 🚀 24+ APIs incluidas
+- 🎨 Diseño moderno
+- 🔍 Sistema de búsqueda
+- 📱 Responsive design
 
 ---
 
-🌐 Servidor
+**Made with ❤️ by Yoel for AlyaBot-MD**
 
-AlyaBot-MD está pensado para ejecutarse en un servidor, evitando depender de Termux para mantener el bot activo.
-
-Usuario
-   │
-   ▼
-WhatsApp
-   │
-   ▼
-AlyaBot-MD
-   │
-   ├── API
-   ├── Base de datos
-   ├── Subbots
-   └── Panel Web
-
----
-
-🔑 API
-
-El proyecto contará con una API propia para conectar:
-
-- AlyaBot-MD
-- Subbots AlyaBot
-- Panel web
-- Servicios externos
-- Sistemas internos
-
-Las claves API deberán mantenerse privadas y nunca deben publicarse directamente en GitHub.
-
----
-
-🤖 Sistema de SubBots
-
-Los usuarios podrán conectar sus propios números como subbots.
-
-Ejemplo:
-
-AlyaBot-MD
-│
-├── AlyaBot #001
-├── AlyaBot #002
-├── AlyaBot #003
-└── AlyaBot #004
-
-Cada subbot tendrá su propia sesión y configuración.
-
----
-
-🌐 Panel Web
-
-El proyecto contará con un panel web para administrar el sistema.
-
-Desde el panel se podrá controlar, entre otras cosas:
-
-┌─────────────────────────────┐
-│       ALYABOT-MD PANEL      │
-├─────────────────────────────┤
-│ 🤖 Bot principal            │
-│ 👥 Subbots                  │
-│ 🔑 API Keys                 │
-│ 📊 Estadísticas             │
-│ ⚙️ Configuración             │
-│ 📝 Logs                     │
-│ 🔄 Reiniciar bot            │
-└─────────────────────────────┘
-
----
-
-📦 Instalación
-
-«La instalación definitiva se agregará cuando el núcleo del proyecto esté terminado.»
-
-git clone URL_DEL_REPOSITORIO
-cd AlyaBot-MD
-npm install
-npm start
-
----
-
-⚙️ Configuración
-
-La configuración estará centralizada para facilitar la administración:
-
-BOT_NAME=AlyaBot-MD
-PREFIX=#
-API_KEY=
-OWNER_NUMBER=
-DATABASE_URL=
-PORT=3000
-
-No publiques archivos ".env" ni claves privadas.
-
----
-
-🔐 Seguridad
-
-AlyaBot-MD utilizará variables de entorno para proteger información sensible.
-
-Ejemplo:
-
-API_KEY=TU_API_KEY
-DATABASE_URL=TU_BASE_DE_DATOS
-SESSION_SECRET=TU_SECRETO
-
-El archivo ".env" deberá estar incluido en ".gitignore".
-
----
-
-📱 Desarrollo desde celular
-
-El proyecto está pensado para poder administrarse desde un teléfono mediante:
-
-- GitHub
-- Panel web
-- Servidor remoto
-- Editor de código
-- Terminal cuando sea necesario
-
-El objetivo es que Termux no sea necesario para mantener el bot funcionando 24/7.
-
----
-
-🚀 Estado del proyecto
-
-🟡 En desarrollo
-
-Progreso
-
-- [x] Crear repositorio
-- [x] Definir nombre AlyaBot-MD
-- [ ] Crear núcleo del bot
-- [ ] Sistema de configuración
-- [ ] Conexión WhatsApp
-- [ ] Sistema de comandos
-- [ ] API propia
-- [ ] Sistema de API Keys
-- [ ] Base de datos
-- [ ] Sistema de subbots
-- [ ] Panel web
-- [ ] Autenticación
-- [ ] Sistema de logs
-- [ ] Despliegue en servidor
-- [ ] Sistema 24/7
-- [ ] Lanzamiento oficial
-
----
-
-👑 Proyecto
-
-AlyaBot-MD
-
-Bot principal del ecosistema AlyaBot.
-
-⚡ Rápido
-🔐 Seguro
-🤖 Inteligente
-🌐 Online 24/7
-👥 MultiBot
-
----
-
-📢 Canal oficial
-
-Canal oficial de AlyaBot:
-
-https://whatsapp.com/channel/0029Vb8Mlht2UPBIKGWSFX0R
-
----
-
-⚠️ Aviso
-
-Este proyecto se encuentra en desarrollo. Algunas funciones pueden cambiar durante el desarrollo de nuevas versiones.
-
-AlyaBot-MD © 2026
+Última actualización: 2024
